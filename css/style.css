@@ -1,0 +1,429 @@
+body,
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mainContent {
+    /* max-width: 90%;
+    margin: auto; */
+}
+
+.main {
+    position: relative;
+}
+
+.main::after {
+    /* content: "";
+    position: absolute;
+    height: 100%;
+    background-color: red;
+    width: 100%;
+    top: 0; */
+}
+
+
+/* For Header Css */
+
+.logo {}
+
+.header {
+    background-color: #4F4D53;
+    display: flex;
+    padding: 6px 0px;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    transition: 0.3s;
+}
+
+.headerInput {
+    background-color: black;
+    border: none;
+    padding: 6px 28px;
+    color: #fff;
+    outline: none;
+    border: 1px solid black;
+}
+
+.headerInput:focus {
+    border: 1px solid #fff;
+    transition: 0.6s;
+}
+
+.headerInput::placeholder {
+    color: #fff;
+    font-family: roboto;
+}
+
+.searchContainer {
+    position: relative;
+}
+
+.searchCotent {
+    position: absolute;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    left: 15px;
+}
+
+.searchCotent img {
+    object-fit: cover;
+    width: 14px;
+    height: 14px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.bannerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.bannerContent h1 {
+    margin: 0;
+    font-weight: bold;
+    color: #4F4D53;
+    font-size: 100px;
+    /* font-size: 6vw; */
+    font-family: roboto;
+}
+
+
+/* Header css end */
+
+
+/* For middle container */
+
+.content {
+    padding-bottom: 100px;
+}
+
+.centreContent {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(0px - 102px);
+    position: relative;
+    /* padding-left: 100px; */
+    z-index: 99;
+}
+
+.minWidth {
+    width: min-content;
+}
+
+.flex {
+    display: flex;
+}
+
+.overBanner {}
+
+.bannerCirleImg {
+    padding-right: 100px;
+}
+
+.bannerCirleImg img {
+    border-radius: 50%;
+}
+
+.bannerCirleImg:last-child {
+    padding-right: 0;
+}
+
+.ninty {
+    width: 90px;
+}
+
+.ninty img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.itemCeter {
+    align-items: center;
+}
+
+.spaceBetween {
+    justify-content: space-around;
+}
+
+.leftFourty {
+    padding-left: 40px;
+}
+
+.bottomFourty {
+    padding-bottom: 40px;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.howStarted h2 {
+    padding-bottom: 40px;
+    color: #E8BE02;
+    font-size: 64px;
+    /* font-size: 4.4vw; */
+    font-family: roboto;
+}
+
+.howStarted p {
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.bottomCircleImg h3 {
+    color: #E8BE02;
+    font-family: roboto;
+    padding-bottom: 4px;
+}
+
+.bottomCircleImg p {
+    font-family: roboto;
+    font-weight: 300;
+    padding-bottom: 4px;
+}
+
+
+/* Middle container end */
+
+
+/* For Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    background-color: #4F4D53;
+    border-top: 12px solid #E8BE02;
+}
+
+.footerItems {
+    font-family: roboto;
+    max-width: 120px;
+}
+
+.footerItems h4 {
+    color: #E8BE02;
+}
+
+.footerMenuItems {
+    color: #fff;
+}
+
+.joinUs {
+    padding-top: 20px;
+}
+
+
+/* Footer end here */
+
+
+/* For Footer CSS */
+
+
+/* For Loader CSS */
+
+.loaderContainer.removeLoader {
+    left: -50%;
+    transition: 1.5s;
+}
+
+.loaderContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    background-color: #fff;
+    width: 100%;
+    z-index: 99999;
+}
+
+.loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #E8BE02;
+    letter-spacing: 0.2em;
+    font-family: roboto;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #E8BE02;
+    position: absolute;
+    animation: load 0.7s infinite alternate ease-in-out;
+}
+
+.loader::before {
+    top: 0;
+}
+
+.loader::after {
+    bottom: 0;
+}
+
+@keyframes load {
+    0% {
+        left: 0;
+        height: 30px;
+        width: 15px;
+    }
+    50% {
+        height: 8px;
+        width: 40px;
+    }
+    100% {
+        left: 235px;
+        height: 30px;
+        width: 15px;
+    }
+}
+
+
+/* For Loader CSS */
+
+
+/* For responsivness */
+
+@media (max-width:878px) {
+    .bannerCirleImg {
+        padding-right: 36px;
+    }
+    .bannerCirleImg img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+    }
+    .centreContent {
+        margin-top: calc(0px - 75px);
+    }
+    .bannerContent h1,
+    .howStarted h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width:600px) {
+    .bannerCirleImg img {
+        width: 100px;
+    }
+    .bannerCirleImg {
+        padding: 0;
+    }
+    .overBanner {
+        justify-content: space-around;
+        padding-top: 18px;
+    }
+}
+
+@media (max-width:470px) {
+    .overBanner {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .centreContent {
+        margin: 0;
+    }
+    .bannerCirleImg {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .bannerCirleImg:last-child {
+        padding-bottom: 0;
+    }
+    .bannerCirleImg img {
+        width: auto;
+    }
+}
+
+@media (max-width:500px) {
+    .centreContent {
+        padding: 0px 25px;
+    }
+    .smallImg,
+    .footer {
+        flex-direction: column;
+    }
+    .smallImg .itemCeter {
+        flex-direction: column;
+        padding-bottom: 34px;
+    }
+    .smallImg .itemCeter .leftFourty {
+        text-align: center;
+        padding-top: 4px;
+        padding-left: 0;
+    }
+    .centreContent .minWidth {
+        width: 100%;
+    }
+    .smallImg .itemCeter .ninty {
+        width: 120px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footerItems {
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+    .footerItems:last-child {
+        padding-bottom: 0;
+    }
+    .header {
+        padding: 6px 14px;
+        justify-content: space-between;
+    }
+    .bannerContent h1,
+    .howStarted h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* responsivness end */
