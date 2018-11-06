@@ -54,7 +54,7 @@ ul {
     padding: 6px 0px;
     justify-content: space-around;
     position: fixed;
-    width: 100%;
+    width: -webkit-fill-available;
     top: 0;
     z-index: 99999;
     transition: 0.3s;
